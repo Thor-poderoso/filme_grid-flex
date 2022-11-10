@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f5f5;
+    color: #c4170c;
+}
+header{
+    background-color: #c4170c;
+    color: #fff;
+}
+.topo{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+.logo{
+    padding: 10px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu .menu-item {
+    margin: 20px 0 20px 20px;
+}
+
+.menu .menu-item .menu-item-link{
+    text-decoration: none;
+    color:#fff;
+}
+
+.destaques{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+    margin:15px 0;
+    max-width: 1100px;
+}
+.destaques .destaques-item:nth-child(1){
+    grid-row: 1/4;
+}
+
+.destaques .destaques-item:nth-child(n + 2) > img {
+    width: 100%;
+    height: 136px;
+}
+.destaques-item {
+    display: grid;
+}
+.destaques-item img {
+    grid-column: 1;
+    grid-row: 1/3;
+
+}
+.destaques-item p{
+    color: #fff;
+    background-color: rgba(196, 23, 12, 0.6);
+    padding: 10px;
+    grid-column: 1;
+    grid-row: 2;
+}
+/*.destaques-item p:last-child{
+    background-color: #000;
+}*/
+
+/*.destaques-item:nth-child(4) p{
+    background-color: red;
+}*/
+
+.destaques-titulo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin:15px 0;
+    max-width: 1100px;
+}  
+
+.destaques-titulo .destaques-topo:nth-child(1){
+    grid-row: 1/4;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+.destaques-titulo .destaques-topo:nth-child(1) > img {
+    height: 300px;
+    width: 300px;
+    margin-right: 5px;
+}
+
+
+.destaques-titulo .destaques-topo:nth-child(n + 2) > img {
+    width: 200px;
+    height: 150px;
+}
+.destaques-topo {
+    display: flex;
+}
+
+
+.destaques-topo img {
+    grid-column: 1;
+    grid-row: 1/4;
+    width: 350px;
+    height: 400px;
+}
+
+.destaques-topo h4 {
+    color: black;
+    padding: 15px;
+    display: grid;
+    padding: 2%;
+    padding-bottom: 13%;
+}
+.destaques-topo .ab{
+    color: rgb(88, 87, 87);
+    padding: 15px;
+    display: grid;
+    font-size: 12px;
+    padding: 2%;
+    padding-bottom: 13%;
+    
+}
+
+.destaques-topo a {
+    color: #c4170c;
+    text-decoration: none;
+}
+.rodape{
+    background-color: #C4170C;
+    color: #FFF;
+    text-align: center;
+    padding: 1%;
+}
